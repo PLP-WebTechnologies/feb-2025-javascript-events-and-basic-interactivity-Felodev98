@@ -1,0 +1,239 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 40px;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 25px;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#changeTextButton {
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+#changeTextButton:hover {
+    background-color: #1e7e34;
+}
+
+#hoverMe {
+    padding: 15px;
+    background-color: #ffc107; /* Bootstrap warning color */
+    color: #212529;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#hoverMe:hover {
+    background-color: #e0a800;
+    color: white;
+    transform: scale(1.02);
+}
+
+#keypressInfo {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+#keypressInfo input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-left: 10px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#keypressOutput {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6c757d; /* Bootstrap secondary color */
+}
+
+#doubleClickMe {
+    background-color: #dc3545; /* Bootstrap danger color */
+}
+
+#doubleClickMe:hover {
+    background-color: #c82333;
+}
+
+#doubleClickMessage {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d4edda; /* Light green for success */
+    color: #155724; /* Dark green for success text */
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+}
+
+/* Image Gallery */
+#imageGallery {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    overflow-x: auto; /* Enable horizontal scrolling for many images */
+    padding-bottom: 10px; /* To avoid scrollbar overlapping with images */
+}
+
+#imageGallery img {
+    width: 120px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+#imageGallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#selectedImage {
+    font-weight: bold;
+    color: #17a2b8; /* Bootstrap info color */
+}
+
+/* Tabs */
+.tab-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.tab-buttons {
+    display: flex;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-buttons button {
+    background-color: inherit;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em;
+    color: #495057; /* Bootstrap gray */
+}
+
+.tab-buttons button.active {
+    background-color: #e9ecef; /* Light gray for active tab */
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* Form */
+form {
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.error-message {
+    color: #dc3545; /* Bootstrap danger color */
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+#validationMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
